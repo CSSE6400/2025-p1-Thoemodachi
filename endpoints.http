@@ -1,0 +1,29 @@
+@baseUrl = http://localhost:6400
+
+### Health
+GET {{baseUrl}}/api/v1/health
+
+### List All todos
+GET {{baseUrl}}/api/v1/todos
+
+GET {{baseUrl}}/api/v1/todos/1
+
+POST {{baseUrl}}/api/v1/todos
+
+Content-Type: application/json
+
+{
+    "title": "example todo",
+    "description": "example todo"
+}
+
+## update todo
+PUT {{baseUrl}}/api/v1/todos/1
+Content-Type: applications/application/json
+
+{
+    "title": "updated title"
+}
+
+### delete todo
+DELETE {{baseUrl}}/api/v1/todos/1
